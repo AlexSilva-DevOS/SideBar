@@ -1,0 +1,155 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  .sidebar {
+    top: 0%;
+    left: 0%;
+    position: fixed;
+    height: 100%;
+    width: 200px;
+    background: rgb(28, 67, 101);
+    padding: 15px;
+    z-index: 99;
+  }
+  .logo {
+    font-size: 80px;
+    padding: 0 100px;
+    background: url("https://media.rs-online.com/image/upload/v1482276653/M1644-01.jpg");
+    background-size: 200px 110px;
+    background-repeat: no-repeat;
+    
+  }
+  .logo2 {
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    height: 100px;
+    width: 150px;
+  }
+  
+  .text-logo {
+    font-size: 20px;
+    padding: 0 50px;
+    position: absolute;
+    top: 18%;
+    left: -10%;
+    text-align: center;
+    
+  }
+  .text-logo2 {
+    font-size: 14px;
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    text-align: center;
+    color: rgb(208, 238, 255);
+    
+  }
+  .sidebar a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .menu-content {
+    position: relative;
+    height: 80%;
+    width: 100%;
+    margin-top: 310px;
+    overflow-y: scroll;
+  }
+  .menu-content::-webkit-scrollbar {
+    display: none;
+  }
+  .menu-items {
+    height: 100%;
+    width: 100%;
+    list-style: none;
+    transition: all 0.4s ease;
+  }
+  .submenu-active .menu-items {
+    transform: translateX(-56%);
+  }
+  .menu-title {
+    color: #fff;
+    font-size: 14px;
+    padding: 15px 20px;
+  }
+  .item a,
+  .submenu-item {
+    padding: 16px;
+    display: inline-block;
+    width: 100%;
+    border-radius: 12px;
+  }
+  .item i {
+    font-size: 12px;
+  }
+  .item a:hover,
+  .submenu-item:hover,
+  .submenu .menu-title:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+  .submenu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+  }
+  .submenu {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: calc(-100% - 26px);
+    height: calc(100% + 100vh);
+    background: rgb(28, 67, 101);
+    display: none;
+  }
+  .show-submenu ~ .submenu {
+    display: block;
+  }
+  .submenu .menu-title {
+    border-radius: 12px;
+    cursor: pointer;
+  }
+  .submenu .menu-title i {
+    margin-right: 10px;
+  }
+  .navbar,
+  .main {
+    left: 260px;
+    width: calc(100% - 260px);
+    transition: all 0.5s ease;
+    z-index: 1000;
+  }
+  .sidebar.close ~ .navbar,
+  .sidebar.close ~ .main {
+    left: 0;
+    width: 100%;
+  }
+  .navbar {
+    position: fixed;
+    color: #fff;
+    padding: 15px 20px;
+    font-size: 25px;
+    background: #4070f4;
+    cursor: pointer;
+  }
+  .navbar #sidebar-close {
+    cursor: pointer;
+  }
+  
+  
+  .dot {
+    height: 15px;
+    width: 15px;
+    background-color: rgb(175, 239, 181);
+    border-radius: 50%;
+    display: inline-block;
+  }
+  
+  
