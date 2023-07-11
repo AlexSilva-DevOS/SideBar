@@ -1,3 +1,3 @@
-# Test SIDEBAR
+# Repo for Work Projects
 
-Personal project test
+Repository remote for personal work
